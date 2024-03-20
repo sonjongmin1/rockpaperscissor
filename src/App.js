@@ -46,14 +46,14 @@ function App() {
     // user == paper computer rock user win
     // user == paper computer scissors user lose
 
-    if (user.name == computer.name) {
+    if (user.name === computer.name) {
       return "tie";
-    } else if (user.name == "Rock")
-      return computer.name == "Scissors" ? "win" : "lose";
-    else if (user.name == "Scissors")
-      return computer.name == "Paper" ? "win" : "lose";
-    else if (user.name == "Paper")
-      return computer.name == "Rock" ? "win" : "lose";
+    } else if (user.name === "Rock")
+      return computer.name === "Scissors" ? "win" : "lose";
+    else if (user.name === "Scissors")
+      return computer.name === "Paper" ? "win" : "lose";
+    else if (user.name === "Paper")
+      return computer.name === "Rock" ? "win" : "lose";
   };
 
   const randomChoice = () => {
